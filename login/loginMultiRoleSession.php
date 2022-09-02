@@ -14,7 +14,7 @@ if ($rowcount>0) {
     $_SESSION['status'] = 'login';
 }
 if ($fechResult['role']=='admin') { 
-echo  '<script language="javascript">alert("Anda berhasil Login Admin!"); document.location="admin/index.php";</script>';
+echo  '<script language="javascript">alert("Anda berhasil Login Admin!"); document.location="admin/controller_admin.php";</script>';
 
 }elseif ($fechResult['role']=='user') { 
 echo '<script language="javascript">alert("Anda berhasil Login User!"); document.location="user/index.php";</script>';
